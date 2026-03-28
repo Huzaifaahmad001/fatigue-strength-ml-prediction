@@ -1,7 +1,7 @@
 # Data-Driven Fatigue Strength Prediction of Heat-Treated 4140 Steel
 
 ## 📌 Overview
-This project investigates the prediction of fatigue strength in heat-treated AISI 4140 alloy steel using machine learning models trained on compositional and processing parameters. The work demonstrates how data-driven approaches can complement traditional experimental methods in understanding structure–property relationships in metallic materials.
+This project predicts fatigue strength in heat-treated AISI 4140 alloy steel using machine learning models trained on compositional and processing parameters. It demonstrates how data-driven approaches complement traditional experimental methods in understanding structure–property relationships in metallic materials.
 
 Developed as part of an undergraduate thesis in Metallurgy and Materials Engineering.
 
@@ -10,20 +10,19 @@ Developed as part of an undergraduate thesis in Metallurgy and Materials Enginee
 ## 🎯 Problem Statement
 Fatigue failure is a critical limitation in structural and automotive components. Conventional fatigue testing is time-consuming, expensive, and limits exploration of large material design spaces.
 
-This project addresses the problem by developing machine learning models to predict fatigue strength based on:
-- Chemical composition
+This project predicts fatigue strength based on:
+- Chemical composition  
 - Heat treatment conditions
 
 ---
 
 ## 📊 Dataset & Preprocessing
 The dataset consists of experimentally measured fatigue strength values along with:
+- Alloy composition (C, Cr, Mo, etc.)  
+- Heat treatment parameters  
 
-- Alloy composition (C, Cr, Mo, etc.)
-- Heat treatment parameters
-
-### Preprocessing steps:
-- Missing value handling  
+**Preprocessing steps:**
+- Handling missing values  
 - Feature scaling and normalization  
 - Correlation analysis  
 - Feature selection  
@@ -31,84 +30,65 @@ The dataset consists of experimentally measured fatigue strength values along wi
 ---
 
 ## 🧠 Methodology
+**Models Implemented:**
+- Random Forest Regressor  
+- Artificial Neural Network (ANN)  
 
-Two supervised learning models were implemented:
-
-- **Random Forest Regressor**
-- **Artificial Neural Network (ANN)**
-
-### Workflow:
-1. Data preprocessing  
-2. Exploratory data analysis  
-3. Feature engineering  
-4. Model training  
-5. Performance evaluation (R² metric)  
+**Workflow:**
+- Data preprocessing  
+- Exploratory data analysis  
+- Feature engineering  
+- Model training  
+- Performance evaluation (R² metric)  
 
 ---
 
 ## 📈 Model Performance
 
 | Model | R² Score |
-|------|--------|
+|-------|----------|
 | Random Forest | 0.986 |
 | ANN | 0.971 |
 
-The Random Forest model achieved superior predictive performance, indicating strong capability in capturing nonlinear relationships between input features and fatigue strength.
+Random Forest achieved superior performance, capturing nonlinear relationships between input features and fatigue strength.
 
 ---
 
 ## 📊 Visual Analysis
+**Included plots:**
+- Correlation heatmap — reveals relationships between composition, processing parameters, and fatigue strength  
+- Predicted vs Actual values — shows model accuracy and generalization  
+- Feature importance (Random Forest) — identifies key contributors to fatigue strength  
 
-### 🔹 Correlation Heatmap
-- Reveals relationships between composition, processing parameters, and fatigue strength  
-- Highlights dominant influencing variables  
-
-### 🔹 Predicted vs Actual Values
-- Demonstrates strong agreement between predicted and experimental fatigue strength  
-- Indicates high model accuracy and generalization  
-
-### 🔹 Feature Importance (Random Forest)
-- Identifies key contributors to fatigue strength  
-- Confirms the influence of alloying elements and heat treatment parameters  
-
-*(All plots are available in the Jupyter Notebook)*
+*(Plots are embedded in the notebook and can be exported as PNG for clarity)*
 
 ---
 
 ## 🔬 Key Scientific Insights
-
-- **Alloy composition strongly influences fatigue strength**, particularly carbon and alloying elements such as chromium and molybdenum, due to their role in hardenability and microstructural evolution.  
-
-- **Heat treatment conditions significantly affect fatigue performance**, likely through phase transformations and grain refinement mechanisms.  
-
-- The model captures **nonlinear interactions between composition and processing**, which are difficult to isolate using traditional experimental approaches alone.  
-
-- Results demonstrate that **machine learning can approximate complex structure–property relationships** in metallic systems.
+- Alloy composition strongly influences fatigue strength, particularly C, Cr, and Mo, due to effects on hardenability and microstructure evolution.  
+- Heat treatment conditions significantly affect fatigue performance through phase transformations and grain refinement.  
+- The model captures nonlinear interactions between composition and processing that are difficult to isolate experimentally.  
 
 ---
 
 ## ⚠️ Limitations
-
-- Dataset size is limited, which may restrict model generalization  
-- The approach is purely data-driven and does not explicitly incorporate physical laws  
-- Microstructural descriptors (grain size, phases) are not directly included  
+- Limited dataset size may affect model generalization  
+- Approach is purely data-driven, without explicit incorporation of physical laws  
+- Microstructural descriptors (grain size, phases) are not included  
 
 ---
 
 ## 🚀 Future Work
-
-- Integration of **physics-informed machine learning approaches**  
-- Inclusion of **microstructural features**  
-- Expansion to larger datasets  
-- Coupling with **computational materials science methods (e.g., DFT, atomistic modeling)**  
+- Integrate physics-informed machine learning approaches  
+- Include microstructural features  
+- Expand to larger and more diverse datasets  
+- Couple with computational materials modeling (DFT, atomistic simulations)  
 
 ---
 
 ## 🛠️ Tools & Technologies
-- Python  
-- Pandas, NumPy  
-- Scikit-learn  
-- TensorFlow  
+- Python, Pandas, NumPy  
+- Scikit-learn, TensorFlow  
 - Matplotlib, Seaborn  
 - Jupyter Notebook  
 
@@ -116,14 +96,20 @@ The Random Forest model achieved superior predictive performance, indicating str
 
 ## 📁 Repository Structure
 
+├── Final_Year_Project_fatigue_strength_prediction.ipynb
+├── README.md
+└── (optional) plots/
+├── correlation_heatmap.png
+├── predicted_vs_actual.png
+└── feature_importance.png
+
 
 ---
 
 ## ▶️ How to Run
 1. Clone the repository  
 2. Install required Python libraries  
-3. Open the notebook  
-4. Run all cells sequentially  
+3. Open the notebook and run all cells sequentially  
 
 ---
 
@@ -131,7 +117,7 @@ The Random Forest model achieved superior predictive performance, indicating str
 **Huzaifa Ahmad**  
 Materials Engineer | Electrochemistry & Data-Driven Materials Modeling  
 📧 huzaifaahmad805@gmail.com  
-🔗 https://linkedin.com/in/huzaifa-ahmad24  
+🔗 [LinkedIn](https://linkedin.com/in/huzaifa-ahmad24)  
 
 ---
 
