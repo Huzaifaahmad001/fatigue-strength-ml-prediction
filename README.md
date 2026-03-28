@@ -78,8 +78,9 @@ Plots are embedded in the notebook and can be exported as PNG for clarity.
 - Matplotlib, Seaborn  
 - Jupyter Notebook
 
-## Repository Structure
+## 📁 Repository Structure
 
+```
 ├── Final_Year_Project_fatigue_strength_prediction.ipynb
 ├── README.md
 ├── requirements.txt
@@ -87,6 +88,7 @@ Plots are embedded in the notebook and can be exported as PNG for clarity.
 │   ├── correlation_heatmap.png
 │   ├── predicted_vs_actual.png
 │   └── feature_importance.png
+```
 
 ## Relevance to Computational Materials Science
 
