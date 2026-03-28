@@ -79,13 +79,14 @@ Plots are embedded in the notebook and can be exported as PNG for clarity.
 - Jupyter Notebook
 
 ## Repository Structure
-Final_Year_Project_fatigue_strength_prediction.ipynb
-README.md
-plots/
-    correlation_heatmap.png
-    predicted_vs_actual.png
-    feature_importance.png
-requirements.txt
+
+├── Final_Year_Project_fatigue_strength_prediction.ipynb
+├── README.md
+├── requirements.txt
+├── plots/
+│   ├── correlation_heatmap.png
+│   ├── predicted_vs_actual.png
+│   └── feature_importance.png
 
 ## Relevance to Computational Materials Science
 
