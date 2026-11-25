@@ -202,7 +202,7 @@ The notebook includes:
 Clone the repository:
 
 ```bash
-git clone https://github.com/USERNAME/REPOSITORY.git
+git clone https://github.com/Huzaifaahmad001/REPOSITORY.git
 cd REPOSITORY
 ```
 
